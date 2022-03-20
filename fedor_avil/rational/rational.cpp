@@ -119,9 +119,4 @@ void Rational::Normal() {
 	den /= g;
 
 }
-/*void Rational::Negative() {
-    if(den<0 && num>=0){
-        den = -den;
-        num = -num;
-    }
-}*/
+
