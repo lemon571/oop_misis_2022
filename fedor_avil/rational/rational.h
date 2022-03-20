@@ -8,9 +8,6 @@ public:
 	Rational(int _num, int _den);
 	
 	Rational(const Rational& other);
-
-	//Rational operator-() const;
-	//Rational operator+() const;
 	Rational& operator=(const Rational& rhs);
 	Rational operator+(const Rational& rhs) const;
 	Rational& operator+=(const Rational& rhs);
@@ -20,12 +17,12 @@ public:
 	Rational& operator*=(const Rational& rhs);
 	Rational operator/(const Rational& rhs) const;
 	Rational& operator/=(const Rational& rhs);
-	bool operator<(const Rational& rhs) const;  //true if *this <rhs;
-	bool operator<=(const Rational& rhs) const; //true if *this <rhs;
+	bool operator<(const Rational& rhs) const; 
+	bool operator<=(const Rational& rhs) const;
 	bool operator>(const Rational& rhs) const;
-	bool operator>=(const Rational& rhs) const; //true if *this <rhs;
-	bool operator==(const Rational& rhs) const; //true if *this <rhs;
-	bool operator!=(const Rational& rhs) const; //true if *this <rhs;
+	bool operator>=(const Rational& rhs) const; 
+	bool operator==(const Rational& rhs) const; 
+	bool operator!=(const Rational& rhs) const; 
 
 	~Rational() = default;
 
@@ -34,5 +31,4 @@ public:
 private:
 	int num, den;
 	void Normal();
-	//void Negative();
 };
